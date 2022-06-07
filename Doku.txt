@@ -1,0 +1,17 @@
+Ziele für die nächste Stunde:
+
+-Banner fertistellen
+ hover Funktion implementieren
+-1. HTML; 2.CSS; 3.Javascript
+
+
+nicht geschaffte Ziele letzer Stunde:
+
+-Banner formatieren 
+-Liste noch nicht geschrieben
+
+
+Was wir verbessern können:
+
+-aufgaben besser für jeden aufteilen
+-Reihenfolge bestimmen
