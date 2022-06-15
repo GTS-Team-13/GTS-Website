@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+/*--Overall--*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color:#0A1F27;
+    overflow-x:  hidden;
+}
+/*----Header Styling----*/
+/*--Nav Tag--*/
+nav{
+  width : 100%;
+ display: flex;
+ padding: 20px;
+ background-color: #ff8d00;
+}
+#creator {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 30px;
+  border-right: solid 2px #000;
+  padding: 10px;
+}
+ul{
+  padding-left: 10px;
+  padding-top: 10px;
+  list-style-type: none;
+}
+ul .outli {
+  display:inline-block;
+  float: left;
+  position: relative;
+}
+ul .outli .mainAtag{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 34px 55px 22px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+  border-radius: 4px;
+  color: #442d81;
+}
+ul .outli:hover .mainAtag{
+ color: #000;
+ background-color: #fff;
+ font-size: 22px;
+}
+ul .outli ul{
+  position:absolute;
+  padding-top: 21px;
+  right: 0px;
+  visibility: hidden;
+  top: 39px;
+  list-style:none;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  z-index: -1;
+  transform: translateY(-2em);
+  opacity: 0;
+}
+ul .outli:hover ul{
+  visibility: visible;
+  z-index: 1;
+  transform: translateY(0%);
+  opacity: 1;
+  transition-delay:  0s, 0s, 0.3s;
+}
+ul .outli ul .innnerli{
+  background-color: #fff;
+  height : 60px;
+  width: 156px;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 18px;
+
+}
+
+ul .outli ul .innnerli a{
+  text-decoration: none;
+  border-radius: 4px;
+  font-family:'Pacifico', cursive;
+  color:#000;
+  font-size: 14px;
+}
+ul .outli ul .innnerli:hover{
+  background-color: #a7a9a9;
+}
+/*--container--*/
+header .container::before{
+  content: ' ';
+  position: absolute;
+  bottom:0;
+  left: 0;
+  top:0;
+  right:0;
+  content: '';
+  display: block;
+  width: 100%;
+  height:100vh;
+  background-image: url(images/newyork.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index:-1;
+  opacity:0.7;
+}
+.container h1{
+  font-size: 150px;
+  margin-top: -80px;
+}
+.container p{
+  font-size: 80px;
+
+}
+header .container{
+  box-sizing: border-box;
+  min-height: 85.5vh;
+  padding: 10vw 0 5vw;
+  width: 100vw;
+  font-family: 'Permanent Marker', cursive;
+  color:#d9d9e5;
+  text-align: center;
+}
+
+/*----Main Styling----*/
+main{
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Thasadith', sans-serif;
+}
+section {
+  width: 80%;
+  text-align: justify;
+  margin: 0px auto;
+  height: 500px;
+  padding: 60px 0 100px;
+  border-top: solid 2px #f0f0f0;
+}
+main section h2{
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 40px;
+  margin-bottom: 5px;
+}
+main section p{
+  font-size: 19px;
+  margin-left: 5px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+section div{
+  display: inline-block;
+}
+section .img{
+  width: 45%;
+  margin-top: 10px;
+  border-radius: 5px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left : 40px;
+}
+section .text{
+  width: 50%;
+  float: left;
+}
+section .text a{
+  padding: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 70px;
+  background-color: #14eae4;
+  border: solid 10px #fff;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  transition: ease-out 0.3s;
+}
+section .text a:hover{
+  font-size: 30px;
+  background-color:#ff8d00;
+}
+#intro{
+  background-image: url(images/rap-battle.jpg);
+}
+#origin{
+  background-image: url(images/bronx.jpg);
+}
+/*---Mindmap---*/
+.mindmap .flex-effected{
+  display:flex;
+  justify-content: space-around;
+}
+
+.mindmap h2{
+  font-size: 35px;
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.mindmap .cloud{
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  bottom:0;
+  right: 0;
+
+}
+.mindmap .cloud p{
+  text-align: justify;
+  font-weight: bold;
+  padding-top: 40px;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  position:relative;
+}
+
+.mindmap .cloud h3{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border: solid 7px #fff;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 100%;
+  font-family: 'Permanent Marker', cursive;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+  z-index: -1;
+ transition: ease-out 0.4s;
+}
+#Rap h3{
+  background-image: url(images/rap.jpg);
+}
+#Dj h3{
+  background-image: url(images/dj.jpg);
+}
+#Graffiti h3{
+  background-image: url(images/darkgraf.jpg);
+}
+#Bboy h3{
+  background-image: url(images/dance.jpg);
+}
+.mindmap .cloud:hover h3{
+  padding: 23px;
+}
+.mindmap .cloud:hover p{
+  opacity: 1;
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.extend{
+  font-size: 16px;
+  text-decoration: underline;
+  color: #42ebf4;
+  position: absolute;
+  bottom: 46%;
+  transition: ease-out 0.2s;
+}
+#Bboy .extend{
+  bottom: 72%;
+}
+#Graffiti .extend{
+  bottom: 52%;
+}
+.extend:hover{
+  cursor: pointer;
+}
+/*---Totopbtn styling---*/
+@keyframes example {
+ from {top:300px;}
+ to {top: 270px;}
+}
+#to-top{
+  position: relative;
+  width: 140px;
+  height: 180px;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 10px #f0f0f0;
+  top: 250px;
+  left: 88%;
+  text-decoration: none;
+  color: #f0f0f0;
+  animation-name: example;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  margin-bottom: 100px;
+
+}
+#up-img{
+  background-image: url(images/uparrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+}
+/*------- Rapper Page------*/
+
+#rapper{
+  background-color:#eee;
+}
+#rapper .container::before{
+  background-image: url(images/rappercover.jpg);
+}
+#rapper header .container h1{
+  color: #13107a;
+  font-size: 110px;
+  padding-top:50px;
+}
+#rapper main section {
+  color:#13107a;
+  border-top: solid 3px #13107a;
+}
+#rapper main section #enimem + .text,#rapper main section #btssuga + .text{
+  margin-top: -50px;
+}
+
+#rapper main section .text{
+  margin-top: 40px;
+  text-shadow: 1.5px 1.5px 2px #7B7C7B;
+}
+#enimem{
+  position: relative;
+  background-image: url(images/enimem.png);
+  margin-top: 0px;
+  height:700px;
+  top: -170px;
+}
+
+#btssuga{
+  background-image: url(images/btssuga.png);
+  height:1000px;
+  position: relative;
+  margin-top: 0px;
+  top: -320px;
+}
+#kanye{
+  background-image: url(images/kanyewest.gif);
+  height:1000px;
+  position: relative;
+  margin-top: 0px;
+  top: -270px;
+}
+#shift-right{
+  float: right;
+}
+#rapper #to-top{
+  border: solid 10px #949393;
+  color: #949393;
+}
+
+
+/*---Songs Styling---*/
+
+#viewport{
+  width: 100%;
+  height:100vh;
+  position: relative;
+  overflow: hidden;
+}
+.songs{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  -webkit-transition:all 1000ms linear;
+  transition: all 800ms linear;
+}
+.songs h2{
+  position:inherit;
+  color: #fff;
+  top: 500px;
+  left: 28%;
+  font-family: 'Signika', sans-serif;
+  font-size: 50px;
+}
+.b h2{
+  left: 5%;
+}
+.c h2{
+  left: 25%;
+}
+.poster{
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  position: inherit;
+  top:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(10px);
+}
+#agust-d{
+  background-image: url(images/agustd.jpg);
+}
+#drowning{
+  background-image: url(images/water.jpg);
+}
+#remName{
+  background-image: url(images/rememberthename.jpg);
+}
+#rap1{
+  z-index:4;
+  left: 0;
+
+}
+#rap2{
+  z-index:3;
+  left: 100%;
+}
+#rap3{
+  z-index: 2;
+  left: -100%;
+}
+#dots-display{
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  background-color: #f0f0f0;
+  opacity: 0.5;
+  top: 95%;
+  left: 50%;
+  margin-left: -150px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+}
+.dots{
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0.5px 0.5px 1px #000;
+  transition: background-color 0.6s ease;
+}
+#active{
+  background-color: #000;
+}
+.switch-btn{
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0.5;
+  transition: background-color 500ms ease;
+  background-image: url(images/rightarrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.switch-btn:hover{
+  background-color: #fff;
+
+}
+.left{
+  left:0;
+  transform: rotate(180deg);
+}
+.right{
+  right:0;
+}
+.videowrapper {
+  position:relative;
+  width: 1000px;
+  padding-bottom: 30.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 30px auto 0;
+}
+.videowrapper iframe{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+#homebtn{
+  position:absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  top: 40px;
+  right: 60px;
+  z-index: 99;
+  background-image: url(images/homebtn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  transition: background-color 600ms ease;
+}
+#homebtn:hover{
+  background-color: #fff;
+  animation-name: home;
+  animation-iteration-count: infinite;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+@keyframes home {
+  from {top : 45px;}
+  to { top : 55px;}
+}
